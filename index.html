@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blokovanie stránok</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Zakázané domény
+            const blokovaneStranky = [
+                "www.ifortuna.sk",
+                "ifortuna.sk"
+            ];
+
+            // Skontroluj aktuálnu URL
+            const aktualnaURL = window.location.hostname;
+
+            // Ak je stránka v zozname blokovaných, presmeruj na inú stránku
+            if (blokovaneStranky.includes(aktualnaURL)) {
+                document.body.innerHTML = "<h1>Táto stránka je zablokovaná!</h1>";
+            }
+        });
+    </script>
+</head>
+<body>
+    <h1>Web blokátor</h1>
+    <p>Ak chcete blokovať stránky, pridajte ich do zoznamu v JavaScripte.</p>
+</body>
+</html>
