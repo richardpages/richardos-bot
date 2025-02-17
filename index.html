@@ -3,27 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blokovanie stránok</title>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Zakázané domény
-            const blokovaneStranky = [
-                "www.ifortuna.sk",
-                "ifortuna.sk"
-            ];
-
-            // Skontroluj aktuálnu URL
-            const aktualnaURL = window.location.hostname;
-
-            // Ak je stránka v zozname blokovaných, presmeruj na inú stránku
-            if (blokovaneStranky.includes(aktualnaURL)) {
-                document.body.innerHTML = "<h1>Táto stránka je zablokovaná!</h1>";
-            }
-        });
-    </script>
+    <title>Richardos - Právne informácie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: white;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #2c2f33;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        h1, h2 {
+            color: #7289da;
+        }
+        a {
+            color: #7289da;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Web blokátor</h1>
-    <p>Ak chcete blokovať stránky, pridajte ich do zoznamu v JavaScripte.</p>
+    <div class="container">
+        <h1>Richardos - Právne informácie</h1>
+        <p>Vitajte na oficiálnej stránke bota Richardos. Tu nájdete podmienky používania a zásady ochrany osobných údajov.</p>
+
+        <h2>Podmienky používania</h2>
+        <p>1. Používaním bota Richardos súhlasíte s týmito podmienkami.</p>
+        <p>2. Bot nesmie byť používaný na nelegálne alebo škodlivé aktivity.</p>
+        <p>3. Vývojár nenesie zodpovednosť za akékoľvek škody spôsobené používaním bota.</p>
+        <p>4. Podmienky môžu byť kedykoľvek zmenené bez predchádzajúceho upozornenia.</p>
+        <p>5. Používatelia nesmú zneužívať funkcie bota na spamovanie alebo iné rušivé správanie.</p>
+        <p>6. Vývojár si vyhradzuje právo pozastaviť alebo zablokovať prístup používateľa k botu v prípade porušenia podmienok.</p>
+
+        <h2>Zásady ochrany osobných údajov</h2>
+        <p>1. Richardos nezbiera, neukladá ani nezdieľa osobné údaje používateľov.</p>
+        <p>2. Bot používa iba údaje nevyhnutné na svoju funkčnosť, ako napríklad ID používateľa pre príkazy.</p>
+        <p>3. Ak si želáte, aby bot odstránil všetky údaje o vás, kontaktujte administrátora servera.</p>
+        <p>4. Používaním bota súhlasíte s týmito zásadami ochrany osobných údajov.</p>
+        <p>5. Všetky údaje, ktoré sú potrebné na fungovanie bota, sú spracovávané v súlade s platnými zákonmi o ochrane osobných údajov.</p>
+
+        <p><strong>Ak máte otázky, kontaktujte administrátora vášho Discord servera.</strong></p>
+    </div>
 </body>
 </html>
